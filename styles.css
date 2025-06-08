@@ -1,0 +1,380 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+    margin: 0;
+    background-image: url(imagenes/Background\ alternativo\ 2.jpg);
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    border-bottom: solid rgba(128, 128, 128, 0.301);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.829);
+    background-size: cover;
+}
+
+header nav {
+    display: flex;
+    width: 84%;
+    height: 3rem;
+    margin:0;
+    border: solid white;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    font-size: 1.5rem;
+    justify-content: space-around;
+    align-content: center;
+}
+
+header li{
+    font-size: 1rem;
+}
+
+header > img {
+    width: 15%;
+}
+
+header a{
+    text-decoration: none; /*Quita el subrayado*/
+    color: black;
+}
+
+main {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.685);
+    background-size: cover;
+}
+
+main > section > h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Seccion categorias */
+
+.card-categoria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card-categoria img{
+    width: 100%;
+    height: 100%;
+    max-height: 15rem;
+}
+
+.contenedor-categoria{
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    width: 40%;
+    height: 50%;
+    background-color: white;
+}
+
+.seccion-categorias h2{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+.seccion-categorias h3{
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+}
+
+/* Sección productos */
+
+.seccion-productos{
+    width: 100%;
+}
+
+.seccion-productos h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    padding: 1rem;
+    border-top: rgba(0, 33, 104, 0.418) solid;
+}
+
+.seccion-productos h3{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.productos{
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+
+    gap: 1rem;
+}
+
+.card-productos{
+    display:block;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1rem;
+    border: rgba(0, 33, 104, 0.418) solid 5px;
+    width: 12rem;   
+    cursor: pointer;
+
+}
+
+.card-productos img{
+    width: 100%;
+    height: 15rem;
+}
+
+.descripcion-productos{
+    display: flex;
+    flex-direction: column;
+    border: rgba(128, 128, 128, 0.425) solid;
+    background-color: rgba(0, 79, 250, 0.219);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.descripcion-productos h3, .descripcion-productos p{
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem 0;
+}
+
+
+/* sector video y mapa*/
+
+.videos-maps {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.mapa{
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.videos-maps h2 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1.5rem;
+    border-top: rgba(0, 33, 104, 0.192) solid;
+    padding: 1rem;
+}
+
+.videos-maps div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.videos-maps video {
+    width: 80%;
+    height: 60%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.301);
+}
+
+.videos-maps map {
+    margin: 1rem;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.301);
+}
+
+.videos-maps form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 40%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+.videos-maps label{
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+.videos-maps form div {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.videos-maps input{
+    width: 100%;
+    height: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.videos-maps textarea {
+    width: 100%;
+    height: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.videos-maps button {
+    padding: 0.8rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+}
+
+/*--------------  S E C T O R   R E S E Ñ A S  --------------*/
+
+.seccion-resenias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    place-items: center;
+    gap: 5rem;    
+    padding: 40px;
+}
+
+.card-resenias{
+    border-radius: 10px;
+    color: gray;
+    width: 100%;  
+    border: 1px solid gray;
+    border: solid red;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.3s ease;
+}
+
+.card-resenias:hover {
+    transform: translateY(-1px) translateX(-1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card-resenias img{
+    width: 100%;
+    max-width: 100%;
+    height: 15rem;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.card-resenia-content{
+    display: block;
+}
+
+.card-resenia-content i{
+    font-size: 14px;
+}
+
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.829);
+    background-size: cover;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+    margin: 0.5rem;
+    margin-bottom: 0%;
+
+    border-bottom: solid 1px rgba(128, 128, 128, 0.486);
+    border-top: ridge rgba(128, 128, 128, 0.3);
+}
+
+footer img {
+    width: 20%;
+    height: 30%;
+}
+
+footer li {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+i {
+    font-size: 1em;
+    margin: 5px;
+}
+
+.icon-instagram {
+    color: #E1306C;
+    /* Fucsia de Instagram */
+}
+
+.icon-facebook {
+    color: #1877F2;
+    /* Azul de Facebook */
+}
+
+.icon-whatsapp {
+    color: #25D366;
+    /* Verde de WhatsApp */
+}
+
+footer h5 {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0.5%;
+}
+
+@media  (min-width : 750px) {
+    main{
+         margin: 0 20%;
+    }
+    .card-resenias{
+        grid-template-columns:auto-fit, minmax(30%,1fr)
+    }
+}

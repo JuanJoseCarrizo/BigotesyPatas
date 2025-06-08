@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuente de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Petshop Bigotes y Patas</title>
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/Logo principal.png" alt="Logo principal">
+        <nav>
+            <ul>
+                <li><a href="#"> Inicio</a></li>
+                <li><a href="#productos"> Productos</a></li>
+                <li><a href="#"> Perros</a></li>
+                <li><a href="#"> Gatos</a></li>
+                <li><a href="#"> Aves y roedores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="seccion-categorias">
+            <h2>Nuestras categorías</h2>
+            <div class="card-categoria">
+                <div class="contenedor-categoria">
+                    <h3> Perros </h3>
+                    <a href="#">
+                        <img src="imagenes/Categoria-perro.png" alt="Perros">
+                    </a>
+                </div>
+                <div class="contenedor-categoria">
+                    <h3> Gatos </h3>
+                    <a href="#">
+                        <img src="imagenes/Categoria-gato.png" alt="Gatos">
+                    </a>
+                </div>
+                <div class="contenedor-categoria">
+                    <h3> Roedores </h3>
+                    <a href="#">
+                        <img src="imagenes/Categoria-rodedor.png" alt="Roedores">
+                    </a>
+                </div>
+                <div class="contenedor-categoria">
+                    <h3> Aves </h3>
+                    <a href="#">
+                        <img src="imagenes/Categoria-aves.png" alt="Aves">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-productos">
+            <div>
+                <h2>Productos</h2>
+                <div class="productos">
+                    <div class="card-productos">
+                        <img src="imagenes/Producto comida.jpg" alt="comida de perros">
+                        <div class="descripcion-productos">
+                            <h3>Comida para perros</h3>
+                            <p>$50.000</p>
+                        </div>
+                    </div>
+                    <div class="card-productos">
+                        <img src="imagenes/Producto Comedero.webp" alt="comedero">
+                        <div class="descripcion-productos">
+                            <h3>Comedero</h3>
+                            <p>$50.000</p>
+                        </div>
+                    </div>
+                    <div class="card-productos">
+                        <img src="imagenes/Producto peines.webp" alt="peines">
+                        <div class="descripcion-productos">
+                            <h3>Peines</h3>
+                            <p>$50.000</p>
+                        </div>
+                    </div>
+                    <div class="card-productos">
+                        <img src="imagenes/Producto Rascador Cubo.webp" alt="rascador gato">
+                        <div class="descripcion-productos">
+                            <h3>rascador</h3>
+                            <p>$50.000</p>
+                        </div>
+                    </div>
+                    <div class="card-productos">
+                        <img src="imagenes/Producto Comida1.jpg" alt="comida de perros">
+                        <div class="descripcion-productos">
+                            <h3>Comida para perros</h3>
+                            <p>$50.000</p>
+                        </div>
+                    </div>
+                    <div class="card-productos">
+                        <img src="imagenes/Producto Comida2.webp" alt="comida de perros">
+                        <div class="descripcion-productos">
+                            <h3>Comida para perros</h3>
+                            <p>$50.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="videos-maps">
+            <div>
+                <h2>Nuestros clientes</h2>
+                <video controls muted autoplay>
+                    <source src="Videos/Divertidos perros disfrazados😁.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div>
+                <h2>Encontranos</h2>
+                <div>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13096.729956918396!2d-58.53127778009799!3d-34.85164167653979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd1f02318bce5%3A0xc573009d45a1549d!2sPetshop%20Patitas!5e0!3m2!1ses-419!2sar!4v1747601315979!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div>
+                <h2>Contactanos</h2>
+                <div>
+                    <form action="https://formspree.io/f/xkgrybao" method="post">
+                        <div>
+                            <label for="">Nombre</label>
+                            <input type="text" name="nombre" placeholder="Escriba su nombre">
+                        </div>
+                        <div>
+                            <label for="">E-mail</label>
+                            <input type="email" name="E-mail" placeholder="mail@*****.com" required>
+                        </div>
+                        <div>
+                            <textarea name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reseñas -->
+
+        <section class="seccion-resenias">
+            <div class="card-resenias">
+                <img src="imagenes/Reseña1.jpg" alt="Resenia 1">
+                <div class="card-resenia-content">
+                    <div>
+                        <p class="card-resenia-nombre"> Pedro Alfonso</p>
+                        <br>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>04/03/2025</p>
+                    </div>
+                    <p>Productos de alta calidad, a ellos les encanta</p>
+                </div>
+            </div>
+            <div class="card-resenias">
+                <img src="imagenes/Reseña2.jpg" alt="Resenia 1">
+                <div class="card-resenia-content">
+                    <div>
+                        <p class="card-resenia-nombre"> Pedro Alfonso</p>
+                        <br>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>04/03/2025</p>
+                    </div>
+                    <p>Productos de alta calidad, a ellos les encanta</p>
+                </div>
+            </div>
+            <div class="card-resenias">
+                <img src="imagenes/Reseña3.jpg" alt="Resenia 1">
+                <div class="card-resenia-content">
+                    <div>
+                        <p class="card-resenia-nombre"> Pedro Alfonso</p>
+                        <br>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>04/03/2025</p>
+                    </div>
+                    <p>Productos de alta calidad, a ellos les encanta</p>
+                </div>
+            </div>
+            <div class="card-resenias">
+                <img src="imagenes/Reseña4.jpg" alt="Resenia 1">
+                <div class="card-resenia-content">
+                    <div>
+                        <p class="card-resenia-nombre"> Pedro Alfonso</p>
+                        <br>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>04/03/2025</p>
+                    </div>
+                    <p>Productos de alta calidad, a ellos les encanta</p>
+                </div>
+            </div>
+            <div class="card-resenias">
+                <img src="imagenes/Reseña5.jpg" alt="Resenia 1">
+                <div class="card-resenia-content">
+                    <div>
+                        <p class="card-resenia-nombre"> Pedro Alfonso</p>
+                        <br>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>04/03/2025</p>
+                    </div>
+                    <p>Productos de alta calidad, a ellos les encanta</p>
+                </div>
+            </div>
+            <div class="card-resenias">
+                <img src="imagenes/Reseña6.jpg" alt="Resenia 1">
+                <div class="card-resenia-content">
+                    <div>
+                        <p class="card-resenia-nombre"> Pedro Alfonso</p>
+                        <br>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>04/03/2025</p>
+                    </div>
+                    <p>Productos de alta calidad, a ellos les encanta</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <div>
+            <div>
+                <img src="imagenes/Logo principal.png" alt="Logo principal">
+                <ul>
+                    <h3> Tienda </h3>
+                    <li><a href="#"> Mi cuenta</a></li>
+                    <li><a href="#"> Tienda</a></li>
+                    <li><a href="#"> Favoritos</a></li>
+                    <li><a href="#"> Carrito de compras</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h3>Enlaces útiles </h3>
+                    <li><a href="#"> Preguntas frecuentes </a></li>
+                    <li><a href="#"> Contacto </a></li>
+                    <li><a href="#"> Quienes somos </a></li>
+                </ul>
+                <ul>
+                    <h3>Nuestras redes</h3>
+
+                    <li><a href="https://www.facebook.com/" target="_blank"> Facebook
+                            <i class="fab fa-facebook icon-facebook"></i>
+                        </a></li>
+
+                    <li><a href="https://www.instagram.com/" target="_blank"> Instagram
+                            <i class="fab fa-instagram icon-instagram"></i>
+                        </a></li>
+
+                    <li><a href="#"> Whatsapp
+                            <i class="fa-brands fa-whatsapp icon-whatsapp"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <h5>
+            Todos los Derechos Reservados a Bigotes y Patas 2025
+        </h5>
+    </footer>
+</body>
+
+</html>

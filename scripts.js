@@ -60,47 +60,48 @@ let carrito = [];
 
 // Agrega un producto al carrito o incrementa su cantidad si ya existe.
 function agregarProductoAlCarrito(idProducto) {
-        // Buscar si el producto ya está en el carrito
+        // Busca si el producto ya esta en el carrito
         let productoEnCarrito = null;
     for (let i = 0; i < carrito.length; i++) {
         if (carrito[i].id === idProducto) {
             productoEnCarrito = carrito[i];
-            break; // Salir del bucle una vez que se encuentra el producto
+            break; // Se usa para salir del bucle
         }
     }
 
     if (productoEnCarrito) {
-        // Si el producto ya está, incrementar la cantidad
+        // Si el producto ya existe, incrementa la cantidad
         productoEnCarrito.cantidad++;
     } else {
-        // Si no está, buscar el producto en el array 'productos' original
+        // Si no está, buscar el producto en el vector 'productos'
         let productoOriginal = null;
         for (let i = 0; i < productos.length; i++) {
             if (productos[i].id === idProducto) {
                 productoOriginal = productos[i];
-                break; // Salir del bucle
+                break;
             }
         }        
         
         // Añadir el producto al carrito con cantidad 1
         carrito.push({ ...productoOriginal, cantidad: 1 });
     }
-    actualizarCarritoHTML(); // Actualizar la vista del carrito
+    actualizarCarritoHTML();
 }
 
-/*------------ Maneja el evento de clic en los botones "Comprar" ------------*/
+/*------------ Evento manejarClicComprar ------------*/
 
 function manejarClicComprar(evento) {    
     const productoId = evento.target.dataset.id;
     agregarProductoAlCarrito(productoId);    
 }
 
+
 /* ------------------ FUNCION AÑADIR PRODUCTOS ------------------*/
 
 function agregarProductos() {
     const divProductos = document.querySelector(".productos");
 
-    for (let i = 0; i < productos.length; i++) {
+            for (let i = 0; i < productos.length; i++) {
         const producto = productos[i];
 
         const card = document.createElement("div");
@@ -113,7 +114,7 @@ function agregarProductos() {
                 <button class="btn-comprar" type="button" data-id="${producto.id}">Añadir a carrito</button>
             </div>
         `;
-
+        
         card.querySelector(".btn-comprar").addEventListener("click", manejarClicComprar);
 
         divProductos.appendChild(card);

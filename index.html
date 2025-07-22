@@ -27,14 +27,16 @@
 
 <body>
     <header>
-        <img src="imagenes/Logo principal.png" alt="Logo principal">
+        <div>
+            <img src="imagenes/Logo principal.png" alt="Logo principal">
+        </div>
         <nav>
             <ul>
                 <li><a href="#"> Inicio</a></li>
                 <li><a href="#productos"> Productos</a></li>
-                <li><a href="#"> Perros</a></li>
-                <li><a href="#"> Gatos</a></li>
-                <li><a href="#"> Aves y roedores</a></li>
+                <li><a href="#clientes" class="navClientes"> Clientes</a></li>
+                <li><a href="#mapa"> Encontranos</a></li>
+                <li><a href="#formulario"> Contactanos</a></li>
             </ul>
         </nav>
     </header>
@@ -69,57 +71,24 @@
             </div>
         </section>
 
-        <section class="seccion-productos">
+<!-- S E C C I O N   P R O D U C T O S -->
+        <section class="seccion-productos" id="productos">
             <div>
                 <h2>Productos</h2>
                 <div class="productos">
-                    <div class="card-productos">
-                        <img src="imagenes/Producto comida.jpg" alt="comida de perros">
-                        <div class="descripcion-productos">
-                            <h3>Comida para perros</h3>
-                            <p>$50.000</p>
-                        </div>
-                    </div>
-                    <div class="card-productos">
-                        <img src="imagenes/Producto Comedero.webp" alt="comedero">
-                        <div class="descripcion-productos">
-                            <h3>Comedero</h3>
-                            <p>$50.000</p>
-                        </div>
-                    </div>
-                    <div class="card-productos">
-                        <img src="imagenes/Producto peines.webp" alt="peines">
-                        <div class="descripcion-productos">
-                            <h3>Peines</h3>
-                            <p>$50.000</p>
-                        </div>
-                    </div>
-                    <div class="card-productos">
-                        <img src="imagenes/Producto Rascador Cubo.webp" alt="rascador gato">
-                        <div class="descripcion-productos">
-                            <h3>rascador</h3>
-                            <p>$50.000</p>
-                        </div>
-                    </div>
-                    <div class="card-productos">
-                        <img src="imagenes/Producto Comida1.jpg" alt="comida de perros">
-                        <div class="descripcion-productos">
-                            <h3>Comida para perros</h3>
-                            <p>$50.000</p>
-                        </div>
-                    </div>
-                    <div class="card-productos">
-                        <img src="imagenes/Producto Comida2.webp" alt="comida de perros">
-                        <div class="descripcion-productos">
-                            <h3>Comida para perros</h3>
-                            <p>$50.000</p>
-                        </div>
-                    </div>
                 </div>
-            </div>
+
+<!-- C A R R I T O   D E   C O M P R A S -->
+                <section class="carritoCompras">
+
+                </section>
+        </section>
+        </div>
         </section>
 
-        <section class="videos-maps">
+
+<!-- V I D E O   Y   F O R M U L A R I O -->
+        <section class="videos-maps" id="clientes">
             <div>
                 <h2>Nuestros clientes</h2>
                 <video controls muted autoplay>
@@ -128,7 +97,7 @@
             </div>
 
             <div>
-                <h2>Encontranos</h2>
+                <h2 id="mapa">Encontranos</h2>
                 <div>
                     <iframe class="mapa"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13096.729956918396!2d-58.53127778009799!3d-34.85164167653979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd1f02318bce5%3A0xc573009d45a1549d!2sPetshop%20Patitas!5e0!3m2!1ses-419!2sar!4v1747601315979!5m2!1ses-419!2sar"
@@ -137,24 +106,32 @@
             </div>
 
             <div>
-                <h2>Contactanos</h2>
+                <h2 id="formulario">Contactanos</h2>
                 <div>
-                    <form action="https://formspree.io/f/xkgrybao" method="post">
+                    <form action="https://formspree.io/f/xkgrybao" method="post" target="_blank">
                         <div>
-                            <label for="">Nombre</label>
-                            <input type="text" name="nombre" placeholder="Escriba su nombre">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre"
+                                autocomplete="name" required>
                         </div>
                         <div>
-                            <label for="">E-mail</label>
-                            <input type="email" name="E-mail" placeholder="mail@*****.com" required>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="mail@*****.com"
+                                autocomplete="email" required>
                         </div>
                         <div>
-                            <textarea name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea type="text" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje"
+                                autocomplete="off"></textarea>
                         </div>
                         <div>
-                            <button type="submit">Enviar</button>
+                            <button type="submit" id="enviarFormulario">Enviar</button>
+                        </div>
+                        <div id="validarFormulario">
+
                         </div>
                     </form>
+
                 </div>
             </div>
         </section>
@@ -259,6 +236,7 @@
                 </div>
             </div>
         </section>
+        <script src="scripts.js"></script>
     </main>
 
     <!-- Footer -->
@@ -266,7 +244,6 @@
     <footer>
         <div class="footer">
             <div>
-                <img src="imagenes/Logo principal.png" alt="Logo principal">
                 <ul>
                     <h3> Tienda </h3>
                     <li><a href="#"> Mi cuenta</a></li>
@@ -276,12 +253,14 @@
                 </ul>
             </div>
             <div>
-                <ul>
+                <ul class="enlaces">
                     <h3>Enlaces útiles </h3>
                     <li><a href="#"> Preguntas frecuentes </a></li>
                     <li><a href="#"> Contacto </a></li>
                     <li><a href="#"> Quienes somos </a></li>
                 </ul>
+            </div>
+            <div>
                 <ul>
                     <h3>Nuestras redes</h3>
 
@@ -298,6 +277,7 @@
                         </a></li>
                 </ul>
             </div>
+        </div>
         </div>
         <h5>
             Todos los Derechos Reservados a Bigotes y Patas 2025

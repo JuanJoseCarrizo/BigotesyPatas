@@ -38,7 +38,7 @@ const productos = [
     },
     {
         id: "05",
-        imagen: "imagenes/Producto Comida1.jpg",
+        imagen: "imagenes/Producto comida1.jpg",
         alt:"comida de perros",
         nombre:"Comida para perros",
         descripcion:"5kg",

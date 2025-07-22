@@ -28,3 +28,7 @@ Este es un proyecto web de una tienda para mascotas.
 ## Autor
 
 Juan José Carrizo
+
+## Pagina
+
+https://juanjosecarrizo.github.io/BigotesyPatas/
